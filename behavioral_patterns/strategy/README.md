@@ -1,5 +1,8 @@
 # Strategy Design Pattern Sample
 This is a C++ implementation of the Strategy design pattern. The Strategy pattern allows you to define a family of algorithms, encapsulate each one of them, and make them interchangeable.
+## Notes
+The Strategy pattern is useful when you have multiple algorithms that can be used interchangeably. It allows you to decouple the client from the specific algorithm implementations and provide flexibility in choosing algorithms at runtime.
+This sample program demonstrates a simple example of the Strategy design pattern. In real-world scenarios, the strategy pattern can be used for more complex algorithms and different types of strategies.
 ## How to Use
 - Make sure you have the necessary files: "strategy.hpp" and "strategy.cpp".
 - Download or clone the repository to your local machine.
@@ -12,6 +15,4 @@ This is a C++ implementation of the Strategy design pattern. The Strategy patter
   - Sorter: This class is the context that uses the sorting strategies. It has a member variable strategy of type Sorting*, which is set by the client to select a particular sorting strategy. The performSort(int arr[], int size) method is responsible for calling the sort() method of the selected strategy to perform the sorting operation.
 - strategy.cpp file contains the implementations of the classes declared in "strategy.hpp," as well as the main() function.
   - main(): The main() function demonstrates the use of the Strategy design pattern. It creates instances of different sorting strategies (BubbleSort and QuickSort) and a Sorter object. The Sorter object is initially set to use the BubbleSort strategy and performs the sorting operation on an integer array using bubble sort. It then changes the strategy to QuickSort and performs the sorting operation again using quick sort.
-## Notes
-The Strategy pattern is useful when you have multiple algorithms that can be used interchangeably. It allows you to decouple the client from the specific algorithm implementations and provide flexibility in choosing algorithms at runtime.
-This sample program demonstrates a simple example of the Strategy design pattern. In real-world scenarios, the strategy pattern can be used for more complex algorithms and different types of strategies.
+
