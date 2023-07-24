@@ -1,14 +1,18 @@
-# Abstract Factory Design Pattern Sample
-This is a C++ implementation of the Abstract Factory design pattern. The Abstract Factory pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes.
-## Notes
+## Table of Contents
+
+- [notes](#notes)
+- [how_to_use](#how_to_use)
+- [code_explanation](#code_explanation)
+  
+## notes
 - The Abstract Factory pattern is useful when you want to create families of related objects, and you want to decouple the client code from the concrete implementations, making it easier to switch between different families of products without modifying the client code.
 - This sample program demonstrates a simple example of the Abstract Factory pattern, and in real-world scenarios, the product families can be more complex and varied.
-## How to Use
+## how_to_use
 - Make sure you have the necessary files: "abstract_factory.hpp" and "abstract_factory.cpp".
 - Download or clone the repository to your local machine.
 - Open a terminal or command prompt and navigate to the directory containing the "abstract_factory.cpp" file.
 - Compile the program using your C++ compiler.
-## Code Explanation
+## code_explanation
 - abstract_factory.hpp header file contains the definitions of the abstract classes and interfaces required for the Abstract Factory design pattern.
   - AbstractProductA: This abstract class represents a product family A and declares a pure virtual method getName() to get the name of the product.
   - AbstractProductB: This abstract class represents a product family B and declares two pure virtual methods: getName() to get the name of the product and interact(AbstractProductA* productA) to represent the interaction between products from different families.
