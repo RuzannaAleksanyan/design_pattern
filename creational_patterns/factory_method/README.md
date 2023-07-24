@@ -4,10 +4,7 @@
 - [Introduction](#introduction)
 - [Features](#features)
 - [Usage](#usage)
-- [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
