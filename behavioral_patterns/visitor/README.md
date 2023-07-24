@@ -1,5 +1,9 @@
-# Visitor Design Pattern Sample
-This is a C++ implementation of the Visitor design pattern. The Visitor pattern allows you to add new operations to existing classes without modifying those classes directly.
+## Table of Contents
+
+- [Notes](#Notes)
+- [How to Use](#HowtoUse)
+- [Code Explanation](#CodeExplanation)
+  
 ## Notes
 The Visitor pattern is useful when you want to add new operations to existing classes without modifying them. It allows you to separate the operations from the classes and keep the code clean and maintainable.
 This sample program demonstrates a simple example of the Visitor design pattern. In real-world scenarios, the visitor pattern can be used for more complex operations on multiple classes within a hierarchy.
