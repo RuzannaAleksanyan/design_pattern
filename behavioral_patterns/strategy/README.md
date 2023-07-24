@@ -1,9 +1,10 @@
 ## Table of Contents
 
-- [Notes](#notes)
+- [notes](#notes)
 - [how_to_use](#how_to_use)
 - [code_explanation](#code_explanation)
-## Notes
+  
+## notes
 The Strategy pattern is useful when you have multiple algorithms that can be used interchangeably. It allows you to decouple the client from the specific algorithm implementations and provide flexibility in choosing algorithms at runtime.
 This sample program demonstrates a simple example of the Strategy design pattern. In real-world scenarios, the strategy pattern can be used for more complex algorithms and different types of strategies.
 ## how_to_use
