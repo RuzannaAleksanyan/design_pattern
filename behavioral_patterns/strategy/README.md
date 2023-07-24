@@ -1,5 +1,8 @@
-# Strategy Design Pattern Sample
-This is a C++ implementation of the Strategy design pattern. The Strategy pattern allows you to define a family of algorithms, encapsulate each one of them, and make them interchangeable.
+## Table of Contents
+
+- [Notes](#notes)
+- [How to Use](#HowtoUse)
+- [Code Explanation](#CodeExplanation)
 ## Notes
 The Strategy pattern is useful when you have multiple algorithms that can be used interchangeably. It allows you to decouple the client from the specific algorithm implementations and provide flexibility in choosing algorithms at runtime.
 This sample program demonstrates a simple example of the Strategy design pattern. In real-world scenarios, the strategy pattern can be used for more complex algorithms and different types of strategies.
