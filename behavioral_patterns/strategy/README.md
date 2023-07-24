@@ -15,4 +15,3 @@ This sample program demonstrates a simple example of the Strategy design pattern
   - Sorter: This class is the context that uses the sorting strategies. It has a member variable strategy of type Sorting*, which is set by the client to select a particular sorting strategy. The performSort(int arr[], int size) method is responsible for calling the sort() method of the selected strategy to perform the sorting operation.
 - strategy.cpp file contains the implementations of the classes declared in "strategy.hpp," as well as the main() function.
   - main(): The main() function demonstrates the use of the Strategy design pattern. It creates instances of different sorting strategies (BubbleSort and QuickSort) and a Sorter object. The Sorter object is initially set to use the BubbleSort strategy and performs the sorting operation on an integer array using bubble sort. It then changes the strategy to QuickSort and performs the sorting operation again using quick sort.
-
