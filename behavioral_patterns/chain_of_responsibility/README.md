@@ -3,7 +3,7 @@ The Chain of Responsibility is a behavioral design pattern that allows multiple 
 ## Table of Contents
 - [Description](#Description)
 - [Notes](#Notes)
-- [Classes(#Classes)
+- [Classes](#Classes)
 - [Usage](#Usage)
 - [Acknowledgments](#Acknowledgments)
 
