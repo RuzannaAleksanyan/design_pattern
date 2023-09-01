@@ -34,12 +34,12 @@ private:
 public:
     Sorter(Sorting* strategy) : strategy(strategy) {}
 
-    void setStrategy(Sorting* newStrategy) 
+    void set_strategy(Sorting* newStrategy) 
     {
         strategy = newStrategy;
     }
 
-    void performSort(int arr[], int size) 
+    void perform_sort(int arr[], int size) 
     {
         strategy->sort(arr, size);
     }
