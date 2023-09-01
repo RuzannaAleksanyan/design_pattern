@@ -9,20 +9,20 @@ protected:
 public:
     Handler() : next(nullptr) {}
 
-    void setNext(Handler* handler) {
+    void set_next(Handler* handler) {
         next = handler;
     }
 
-    virtual void handleRequest(int request) = 0;
+    virtual void handle_request(int request) = 0;
 };
 
 class ConcreteHandler1 : public Handler {
 public:
-    void handleRequest(int request) {
+    void handle_request(int request) {
         if (request >= 0 && request < 10) {
             std::cout << "Request " << request << " handled by ConcreteHandler1." << std::endl;
         } else if (next != nullptr) {
-            next->handleRequest(request);
+            next->handle_request(request);
         } else {
             std::cout << "End of chain. Request " << request << " cannot be handled." << std::endl;
         }
@@ -31,11 +31,11 @@ public:
 
 class ConcreteHandler2 : public Handler {
 public:
-    void handleRequest(int request) {
+    void handle_request(int request) {
         if (request >= 10 && request < 20) {
             std::cout << "Request " << request << " handled by ConcreteHandler2." << std::endl;
         } else if (next != nullptr) {
-            next->handleRequest(request);
+            next->handle_request(request);
         } else {
             std::cout << "End of chain. Request " << request << " cannot be handled." << std::endl;
         }
@@ -44,11 +44,11 @@ public:
 
 class ConcreteHandler3 : public Handler {
 public:
-    void handleRequest(int request) {
+    void handle_request(int request) {
         if (request >= 20 && request < 30) {
             std::cout << "Request " << request << " handled by ConcreteHandler3." << std::endl;
         } else if (next != nullptr) {
-            next->handleRequest(request);
+            next->handle_request(request);
         } else {
             std::cout << "End of chain. Request " << request << " cannot be handled." << std::endl;
         }
