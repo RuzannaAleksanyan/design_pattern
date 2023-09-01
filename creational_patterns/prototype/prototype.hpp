@@ -12,15 +12,15 @@ private:
 public:
     virtual Animal* clone() const = 0;
 
-    void setName(const std::string& name) {
+    void set_name(const std::string& name) {
         this->name = name;
     }
 
-    void setSpecies(const std::string& species) {
+    void set_species(const std::string& species) {
         this->species = species;
     }
 
-    void printInfo() const {
+    void print_info() const {
         std::cout << "Name: " << name << ", Species: " << species << std::endl;
     }
 };
@@ -28,16 +28,16 @@ public:
 class Dog : public Animal {
 public:
     Dog* clone() const override {
-        Dog* newDog = new Dog(*this);
-        return newDog;
+        Dog* new_dog = new Dog(*this);
+        return new_dog;
     }
 };
 
 class Cat : public Animal {
 public:
     Cat* clone() const override {
-        Cat* newCat = new Cat(*this);
-        return newCat;
+        Cat* new_cat = new Cat(*this);
+        return new_cat;
     }
 };
 
