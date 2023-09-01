@@ -1,18 +1,18 @@
 ## Table of Contents
 
-- [notes](#notes)
-- [how to use](#how_to_use)
-- [code explanation](#code_explanation)
+- [Notes](#notes)
+- [How To Use](#how_to_use)
+- [Code Explanation](#code_explanation)
   
-## notes
+## Notes
 The Visitor pattern is useful when you want to add new operations to existing classes without modifying them. It allows you to separate the operations from the classes and keep the code clean and maintainable.
 This sample program demonstrates a simple example of the Visitor design pattern. In real-world scenarios, the visitor pattern can be used for more complex operations on multiple classes within a hierarchy.
-## how_to_use
+## How To Use
 - Make sure you have the necessary files: "visitor.hpp" and "visitor.cpp".
 - Download or clone the repository to your local machine.
 - Open a terminal or command prompt and navigate to the directory containing the "visitor.cpp" file.
 - Compile the program using your C++ compiler.
-## code_explanation
+## Code Explanation
 - visitor.hpp header file contains the declarations of classes and interfaces required for the Visitor design pattern.
   - ShapeVisitor: This abstract class represents the Visitor interface and declares two pure virtual methods: visit(Circle* shape) and visit(Rectangle* shape). Concrete visitor classes will implement these methods to perform specific operations on shapes.
   - Shape: This abstract class represents the element in the Visitor pattern and declares the accept(ShapeVisitor* visitor) method as a pure virtual function. The accept() method will be implemented by concrete shape classes to allow the visitor to perform operations on them.
