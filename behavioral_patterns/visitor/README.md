@@ -1,8 +1,8 @@
 ## Table of Contents
 
 - [notes](#notes)
-- [how_to_use](#how_to_use)
-- [code_explanation](#code_explanation)
+- [how to use](#how_to_use)
+- [code explanation](#code_explanation)
   
 ## notes
 The Visitor pattern is useful when you want to add new operations to existing classes without modifying them. It allows you to separate the operations from the classes and keep the code clean and maintainable.
