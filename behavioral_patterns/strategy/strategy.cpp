@@ -4,14 +4,14 @@ int main()
 {
     int arr[] = { 5, 2, 8, 3, 1 };
 
-    BubbleSort bubbleSortStrategy;
-    QuickSort quickSortStrategy;
+    BubbleSort bubble_sort_strategy;
+    QuickSort quick_sort_strategy;
 
-    Sorter sorter(&bubbleSortStrategy);
-    sorter.performSort(arr, 5);
+    Sorter sorter(&bubble_sort_strategy);
+    sorter.perform_sort(arr, 5);
 
-    sorter.setStrategy(&quickSortStrategy);
-    sorter.performSort(arr, 5);
+    sorter.set_strategy(&quick_sort_strategy);
+    sorter.perform_sort(arr, 5);
 
     return 0;
 }
