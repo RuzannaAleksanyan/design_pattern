@@ -1,22 +1,22 @@
 #include "prototype.hpp"
 
 int main() {
-    Dog dogPrototype;
-    dogPrototype.setName("Buddy");
-    dogPrototype.setSpecies("Dog");
+    Dog dog_prototype;
+    dog_prototype.set_name("Buddy");
+    dog_prototype.set_species("Dog");
 
-    Cat catPrototype;
-    catPrototype.setName("Whiskers");
-    catPrototype.setSpecies("Cat");
+    Cat cat_prototype;
+    cat_prototype.set_name("Whiskers");
+    cat_prototype.set_species("Cat");
 
-    Animal* newDog = dogPrototype.clone();
-    Animal* newCat = catPrototype.clone();
+    Animal* new_dog = dog_prototype.clone();
+    Animal* new_cat = cat_prototype.clone();
 
-    newDog->printInfo();
-    newCat->printInfo();
+    new_dog->print_info();
+    new_cat->print_info();
 
-    delete newDog;
-    delete newCat;
+    delete new_dog;
+    delete new_cat;
 
     return 0;
 }
