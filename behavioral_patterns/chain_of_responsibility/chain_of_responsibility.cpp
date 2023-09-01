@@ -5,13 +5,13 @@ int main() {
     Handler* handler2 = new ConcreteHandler2();
     Handler* handler3 = new ConcreteHandler3();
 
-    handler1->setNext(handler2);
-    handler2->setNext(handler3);
+    handler1->set_next(handler2);
+    handler2->set_next(handler3);
 
-    handler1->handleRequest(5);
-    handler1->handleRequest(15);
-    handler1->handleRequest(25);
-    handler1->handleRequest(35);
+    handler1->handle_request(5);
+    handler1->handle_request(15);
+    handler1->handle_request(25);
+    handler1->handle_request(35);
 
     delete handler1;
     delete handler2;
