@@ -23,21 +23,21 @@ private:
     float c;
     float ro;
 public:
-    void addObserver(Observer* observer) {
+    void add_observer(Observer* observer) {
         observers.push_back(observer);
     }
 
-    void removeObserver(Observer* observer) {
+    void remove_observer(Observer* observer) {
         observers.erase(std::remove(observers.begin(), observers.end(), observer), observers.end());
     }
 
-    void notifyObservers() {
+    void notify_observers() {
         for (Observer* observer : observers) {
             observer->update(c, ro);
         }
     }
 
-    void setWeatherData(float temperature, float humidity) {
+    void set_weather_data(float temperature, float humidity) {
         this->c = temperature;
         this->ro = humidity;
         notifyObservers();
