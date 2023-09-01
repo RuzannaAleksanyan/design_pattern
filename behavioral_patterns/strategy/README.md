@@ -1,8 +1,8 @@
 ## Table of Contents
 
 - [notes](#notes)
-- [how_to_use](#how_to_use)
-- [code_explanation](#code_explanation)
+- [how to use](#how_to_use)
+- [code explanation](#code_explanation)
   
 ## notes
 The Strategy pattern is useful when you have multiple algorithms that can be used interchangeably. It allows you to decouple the client from the specific algorithm implementations and provide flexibility in choosing algorithms at runtime.
