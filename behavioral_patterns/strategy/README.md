@@ -1,18 +1,18 @@
 ## Table of Contents
 
-- [notes](#notes)
-- [how to use](#how_to_use)
-- [code explanation](#code_explanation)
+- [Notes](#notes)
+- [How To Use](#how_to_use)
+- [Code Explanation](#code_explanation)
   
-## notes
+## Notes
 The Strategy pattern is useful when you have multiple algorithms that can be used interchangeably. It allows you to decouple the client from the specific algorithm implementations and provide flexibility in choosing algorithms at runtime.
 This sample program demonstrates a simple example of the Strategy design pattern. In real-world scenarios, the strategy pattern can be used for more complex algorithms and different types of strategies.
-## how_to_use
+## How To Use]
 - Make sure you have the necessary files: "strategy.hpp" and "strategy.cpp".
 - Download or clone the repository to your local machine.
 - Open a terminal or command prompt and navigate to the directory containing the "strategy.cpp" file.
 - Compile the program using your C++ compiler.
-## code_explanation
+## Code Explanation
 - strategy.hpp header file contains the definitions of classes and interfaces required for the Strategy design pattern.
   - Sorting: This is an abstract class representing the Strategy interface. It declares a pure virtual method sort(int arr[], int size) that will be implemented by concrete sorting strategies.
   - BubbleSort and QuickSort: These classes are concrete implementations of the Sorting interface. They provide their own implementations of the sort() method to perform the bubble sort and quick sort algorithms, respectively.
