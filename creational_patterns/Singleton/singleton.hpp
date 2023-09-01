@@ -6,7 +6,7 @@ private:
     static Singleton* Instance;
     Singleton() {}
 public:
-    static Singleton* getInstance() {
+    static Singleton* get_instance() {
         if (Instance == nullptr) {
             Instance = new Singleton();
         }   
