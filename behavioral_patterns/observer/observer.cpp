@@ -6,15 +6,15 @@ int main() {
     Display display1;
     Display display2;
 
-    weatherStation.addObserver(&display1);
-    weatherStation.addObserver(&display2);
+    weatherStation.add_observer(&display1);
+    weatherStation.add_observer(&display2);
 
-    weatherStation.setWeatherData(25.5, 70.2);
-    weatherStation.setWeatherData(24.8, 68.5);
+    weatherStation.set_weather_data(25.5, 70.2);
+    weatherStation.set_weather_data(24.8, 68.5);
 
-    weatherStation.removeObserver(&display2);
+    weatherStation.remove_observer(&display2);
 
-    weatherStation.setWeatherData(23.7, 75.0);
+    weatherStation.set_weather_data(23.7, 75.0);
 
     return 0;
 }
