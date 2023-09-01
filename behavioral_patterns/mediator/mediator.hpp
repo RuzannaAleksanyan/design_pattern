@@ -9,7 +9,7 @@ class Colleague;
 
 class Mediator {
 public:
-    virtual void sendMessage(const std::string& message, Colleague* colleague) = 0;
+    virtual void send_message(const std::string& message, Colleague* colleague) = 0;
 };
 
 class Colleague {
@@ -29,11 +29,11 @@ private:
     std::vector<Colleague*> colleagues;
 
 public:
-    void addColleague(Colleague* colleague) {
+    void add_colleague(Colleague* colleague) {
         colleagues.push_back(colleague);
     }
 
-    void sendMessage(const std::string& message, Colleague* colleague) override {
+    void send_message(const std::string& message, Colleague* colleague) override {
         for (Colleague* col : colleagues) {
             if (col != colleague) {
                 col->receive(message);
@@ -48,7 +48,7 @@ public:
 
     void send(const std::string& message) override {
         std::cout << "Sending message from " << name << ": " << message << std::endl;
-        mediator->sendMessage(message, this);
+        mediator->send_message(message, this);
     }
 
     void receive(const std::string& message) override {
