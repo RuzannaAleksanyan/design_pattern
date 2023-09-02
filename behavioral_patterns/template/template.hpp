@@ -1,5 +1,5 @@
-#ifndef PROTOTYPE
-#define PROTOTYPE
+#ifndef TEMPLATE
+#define TEMPLATE
 
 #include <iostream>
 
