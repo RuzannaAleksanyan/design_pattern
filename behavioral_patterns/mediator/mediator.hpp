@@ -1,5 +1,5 @@
-#ifndef PROTOTYPE
-#define PROTOTYPE
+#ifndef MEDIATOR
+#define MEDIATOR
 
 #include <iostream>
 #include <string>
